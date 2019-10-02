@@ -1,6 +1,32 @@
+$text-danger: #000000;
+
+$table-color: #5c5c5c;
+
+body {
+  color: $text-danger;
+}
+
+.table {
+  width: 50%;
+  color: $table-color;
+}
+
+#hide {
+  font-size: 22pt;
+}
+
+#show {
+  font-size: 32pt;
+}
+
 $theme-colors: (
         "primary": #40d931,
-        "secondary": #042fff
+        "secondary": #042fff,
+);
+
+$font-size-base: (
+        0.5rem
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+

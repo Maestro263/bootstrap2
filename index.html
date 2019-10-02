@@ -54,21 +54,47 @@
         </div>
     </nav>
 
+    <button id="show">
+        blue
+    </button>
+    <button id="hide">
+        red
+    </button>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque eaque laborum non nulla odio.
+        Dignissimos eaque inventore minus nam, non officiis quaerat quis! Corporis enim ex nulla totam veniam!</div>
 
-    <div class="r">
-        <div class="col">
-            <div class="bg-secondary">
-                123
-            </div>
-        </div>
-    </div>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/showHide.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".text").showHide({
+                opacitys: {
+                    opacity: '100',
+                    fontSize: '32pt',
+                    bgColor: 'green'
+                }
+
+            });
+        });
+
+
+        /*
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });*/
+
+    </script>
 
 </div>
 
 
 
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
